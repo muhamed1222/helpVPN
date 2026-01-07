@@ -1,3 +1,56 @@
+import { Callout } from 'nextra/components'
+
 # Настройка на Windows
 
-Инструкция в процессе написания.
+Для Windows мы рекомендуем использовать современный клиент **Hiddify** или проверенный временем **Nekoray**.
+
+## Вариант 1: Hiddify (Рекомендуется)
+
+Самый простой и красивый клиент. Поддерживает русский язык.
+
+### 1. Скачивание и установка
+Скачайте установочный файл с GitHub:
+<a href="https://github.com/hiddify/hiddify-next/releases/latest" target="_blank" style={{
+  display: 'inline-flex',
+  alignItems: 'center',
+  padding: '10px 20px',
+  backgroundColor: '#0070f3',
+  color: 'white',
+  borderRadius: '8px',
+  textDecoration: 'none',
+  marginTop: '10px',
+  marginBottom: '20px'
+}}>⬇️ Скачать Hiddify (Windows Setup)</a>
+
+1. Запустите скачанный `.exe` файл.
+2. После установки приложение откроется автоматически.
+
+### 2. Подключение
+1. Скопируйте ваш ключ доступа (начинается с `vless://`) из [Telegram-бота](https://t.me/outlivion_bot).
+2. Откройте Hiddify.
+3. Нажмите большую кнопку **«+»** или **«Новый профиль»**.
+4. Выберите **«Добавить из буфера обмена»**.
+5. Нажмите большую круглую кнопку подключения по центру.
+
+---
+
+## Вариант 2: Nekoray (Для опытных)
+
+Если вам нужны расширенные настройки маршрутизации.
+
+### 1. Скачивание
+Скачайте архив `nekoray-windows64` с GitHub:
+[Скачать Nekoray](https://github.com/MatsuriDayo/nekoray/releases/latest)
+
+### 2. Настройка
+1. Распакуйте архив в удобное место.
+2. Запустите `nekoray.exe`.
+3. **Важно:** При первом запуске выберите ядро **sing-box**.
+4. Скопируйте ключ из бота.
+5. Нажмите `Program` -> `Add profile from clipboard` (или `Ctrl + V` в окне программы).
+6. Поставьте галочку **TUN Mode** (сверху), чтобы VPN работал во всех программах.
+7. Нажмите правой кнопкой на добавленный сервер -> **Start**.
+
+<Callout type="warning" emoji="⚠️">
+  Если не включить **TUN Mode** (или System Proxy), VPN будет работать только в браузере!
+</Callout>
